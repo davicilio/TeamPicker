@@ -19,6 +19,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+const db = firebase.firestore();
 
 // Cargar las preguntas al cargar la página
 document.addEventListener('DOMContentLoaded', async () => {
